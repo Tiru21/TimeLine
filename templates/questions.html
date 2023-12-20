@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/questions.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="time_line.html">История</a>
+            <a href="#">Теория</a>
+            <a class="active" href="#">Тестирование</a>
+            <a href="#">Авторы</a>
+        </nav>
+        <div class="profile-form">
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+        </div>
+    </header>
+    <main>
+        <section class="questions">
+            <div>
+                <form method="post">
+                    <div class="question">
+                        <div class="question-title">
+                            <p>1 вопрос. 1941 год.</p>
+                        </div>
+                        <div class="question-body">
+                            <p>Дата начала войны.</p>
+                            <input type="text" name="q1" id="">
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="question-title">
+                            <p>2 вопрос. 1941 год.</p>
+                        </div>
+                        <div class="question-body">
+                            <p>Дата начала войны.</p>
+                            <div class="question-variant-body checkbox-question">
+                                <label for="cb1"><input type="checkbox" checked="checked" name="" id="cb1">ответ1</label>
+                                <label><input type="checkbox" name="" id="">ответ1</label>
+                                <label><input type="checkbox" name="" id="">ответ1</label>
+                                <label><input type="checkbox" name="" id="">ответ1</label>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="question-title">
+                            <p>3 вопрос. 1941 год.</p>
+                        </div>
+                        <div class="question-body">
+                            <p>Дата начала войны.</p>
+                            <div class="question-variant-body radio-question">
+                                <label><input type="radio" name="r1" id="">ответ1</label>
+                                <label><input type="radio" name="r1" id="">ответ1</label>
+                                <label><input type="radio" name="r1" id="">ответ1</label>
+                                <label><input type="radio" name="r1" id="">ответ1</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="test-submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/questions.js"></script>
+</body>
+</html>
