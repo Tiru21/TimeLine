@@ -1,22 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap');
+
+:root {
+    --color-1: #54573A;
+    --color-1-: #495235;
+    --color-2: #A0B58D; /* A0B58D AAB69B */
+    --color-3: #A19C69;
+    --color-4: #C0BA78;
+    --color-5: #D6DAC2;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Source Serif 4";
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px 30px;
-    background-color: #550606;
+    background-color: var(--color-1);
 }
 
 
 header a {
-    color: aliceblue;
+    color: var(--color-5);
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 15px;
@@ -28,25 +39,25 @@ header a:last-child {
 }
 
 header a:hover {
-    color:antiquewhite;
+    color:var(--color-2);
 }
 
 
 .active {
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid #D6DAC2;
 }
 
 .active:hover {
-    border-bottom: 1px solid antiquewhite;
+    border-bottom: 1px solid var(--color-2);
 }
 
 .profile-form a {
-    border: 1px solid aliceblue;
+    border: 1px solid #D6DAC2;
     padding: 10px 20px;
     border-radius: 10px;
 }
 
 .profile-form a:hover {
-    border: 1px solid antiquewhite;
-    background-color: #621313;
+    border: 1px solid var(--color-2);
+    background-color: var(--color-1-);
 }
