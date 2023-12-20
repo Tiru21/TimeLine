@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/questions.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/questions.css') }}">
 </head>
 <body>
     <header>
         <nav>
             <a href="#">Главная</a>
-            <a href="time_line.html">История</a>
+            <a href="{{ url_for('static', filename='templates/time_line.html') }}">История</a>
             <a href="#">Теория</a>
             <a class="active" href="#">Тестирование</a>
             <a href="#">Авторы</a>
@@ -71,6 +71,6 @@
     <footer>
 
     </footer>
-    <script src="scripts/questions.js"></script>
+    <script src="{{ url_for('static', filename='js/questions.js') }}"></script>
 </body>
 </html>

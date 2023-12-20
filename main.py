@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("time_line.html")
+    return render_template("time_line.html", )
 
 
 if __name__ == "__main__":
